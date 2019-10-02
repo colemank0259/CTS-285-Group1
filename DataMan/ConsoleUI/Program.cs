@@ -12,6 +12,7 @@ namespace ConsoleUI
         {
             Console.WriteLine("Hello");
             Console.WriteLine("HelloAgain");
+            Console.WriteLine("Testing 123");
             Console.ReadLine();
         }
     }
