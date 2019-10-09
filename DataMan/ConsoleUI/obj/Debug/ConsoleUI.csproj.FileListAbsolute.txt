@@ -5,3 +5,10 @@ C:\Users\colemank0259\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debu
 C:\Users\colemank0259\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
 C:\Users\colemank0259\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.exe
 C:\Users\colemank0259\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.pdb
+C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
+C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.pdb

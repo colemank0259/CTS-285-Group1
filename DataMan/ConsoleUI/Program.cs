@@ -10,11 +10,9 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
-            Console.WriteLine("HelloAgain");
-            Console.WriteLine("Testing 123");
-            MemoryBank.getMemoryBank();
-            Console.ReadLine();
+            AnswerChecker.RunAnswerChecker();
+            //MemoryBank.getMemoryBank();
+            //Console.ReadLine();
         }
     }
 }

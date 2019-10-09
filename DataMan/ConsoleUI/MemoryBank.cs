@@ -20,50 +20,65 @@ namespace ConsoleUI
             int num2 = 0;
             char[] operators = { '+', '-', '*', '/' };
             char randomOp = ' ';
-            int userAnswer = 0;
-            int correctAnswer = 0;
+            
             
             // Loop for creating math problems
             for (int i = 0; i <= QUESTION_AMOUNT; i++)
             {
-                num1 = rand.Next(1, 100);
-                num2 = rand.Next(1, 100);
-                randomOp = operators[rand.Next(operators.Length)];
-                Console.Write($"{num1} {randomOp} {num2} = ");
-                inputString = Console.ReadLine();
+                int index = 0;
+                int userAnswer = 0;
+                int correctAnswer = 1;
 
-                if (int.TryParse(inputString, out userAnswer))
+                num1 = rand.Next(1, 5);
+                num2 = rand.Next(1, 5);
+                randomOp = operators[rand.Next(operators.Length)];
+
+
+                while (index < 2 && correctAnswer != userAnswer)
                 {
-                    switch (randomOp)
+
+                    Console.Write($"{num1} {randomOp} {num2} = ");
+                    inputString = Console.ReadLine();
+
+                    if (int.TryParse(inputString, out userAnswer))
                     {
-                        case '+':
-                            correctAnswer = num1 + num2;
-                            break;
-                        case '-':
-                            correctAnswer = num1 - num2;
-                            break;
-                        case '*':
-                            correctAnswer = num1 * num2;
-                            break;
-                        case '/':
-                            correctAnswer = num1 / num2;
-                            break;
+                        switch (randomOp)
+                        {
+                            case '+':
+                                correctAnswer = num1 + num2;
+                                break;
+                            case '-':
+                                correctAnswer = num1 - num2;
+                                break;
+                            case '*':
+                                correctAnswer = num1 * num2;
+                                break;
+                            case '/':
+                                correctAnswer = num1 / num2;
+                                break;
+                            default:
+                                Console.WriteLine("INvalid");
+                                break;
+                        }
+
+                    }
+                    else
+                    {
+                       Console.WriteLine("Not a valid response. Must be greater than 0.");
                     }
 
                     if (userAnswer == correctAnswer)
                     {
-                        //TODO
+                        Console.WriteLine(" it works");
                     }
-                }
-                else
-                {
-                    Console.WriteLine("Not a valid response. Must be greater than 0."); 
-                }
+                    else
+                    {
+                        Console.WriteLine("It does not work");
+                    }
 
-               
+                    index++;
+                }
             }
         }
-        
-
     }
 }
