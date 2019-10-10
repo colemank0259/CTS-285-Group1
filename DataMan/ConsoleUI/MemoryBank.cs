@@ -33,8 +33,8 @@ namespace ConsoleUI
                 // Loop for creating math problems
                 for (int i = 0; i <= QUESTION_AMOUNT; i++)
                 {
-                    num1 = rand.Next(1, 100);
-                    num2 = rand.Next(1, 100);
+                    num1 = rand.Next(1, 10);
+                    num2 = rand.Next(1, 10);
                     randomOp = operators[rand.Next(operators.Length)];
                     Console.Write($"{num1} {randomOp} {num2} = ");
                     inputString = Console.ReadLine();
@@ -65,47 +65,75 @@ namespace ConsoleUI
                         {
                             Console.WriteLine("Incorrect.");
                         }
+
+                        
                     }
                     else
                     {
                         Console.WriteLine("Not a valid response. Must be an integer.");
                     }
 
-                    // Prompt the user to repeat the activity
-                    Console.Write("Enter 1 to repeat the activity or 2 to exit: ");
-                    inputString = Console.ReadLine();
-                    if (int.TryParse(inputString, out runAnswer))
-                    {
-                        switch (runAnswer)
-                        {
-                            case 1:
-                                run = true;
-                                break;
-                            case 2:
-                                run = false;
-                                break;
-                           
-                        }
+                    
 
-                        if (userAnswer == correctAnswer)
-                        {
-                            Console.WriteLine("Correct!");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Incorrect.");
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("Not a valid response. Must be an integer.");
-                    }
+                }
 
+                //// Prompt the user to repeat the activity
+                //run = promptMemoryBankRun(run);
+
+                // Prompt the user to repeat the activity
+                Console.Write("Enter 1 to repeat the activity or 2 to exit: ");
+                inputString = Console.ReadLine();
+                if (int.TryParse(inputString, out runAnswer))
+                {
+                    switch (runAnswer)
+                    {
+                        case 1:
+                            run = true;
+                            break;
+                        case 2:
+                            run = false;
+                            break;
+
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Not a valid response. Must be an integer.");
                 }
             } while (run == true);
 
             
         }
+
+        //public static bool promptMemoryBankRun(bool run)
+        //{
+        //    // Local variables
+        //    string inputString;
+        //    int runAnswer;
+
+        //    // Prompt the user to repeat the activity
+        //    Console.Write("Enter 1 to repeat the activity or 2 to exit: ");
+        //    inputString = Console.ReadLine();
+        //    do
+        //    {
+        //        switch (inputString)
+        //        {
+        //            case "yes":
+        //                run = true;
+        //                break;
+        //            case "no":
+        //                run = false;
+        //                break;
+        //            default:
+        //                Console.WriteLine("Not a valid response. Must enter yes or no.");
+        //                break;
+
+        //        }
+        //    } while (inputString != "yes" | inputString != "no");
+
+        //    return run;
+
+        //}
         
 
     }
