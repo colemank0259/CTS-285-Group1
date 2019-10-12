@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MemoryBank.cs" />
+    <Compile Include="Messages.cs" />
     <Compile Include="NumberGuesser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

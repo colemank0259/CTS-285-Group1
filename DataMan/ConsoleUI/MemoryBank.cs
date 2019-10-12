@@ -8,7 +8,7 @@ namespace ConsoleUI
 {
     public class MemoryBank
     {
-        public static void getMemoryBank()
+        public static void GetMemoryBank()
         {
             // Named constants
             const int QUESTION_AMOUNT = 10;
@@ -59,11 +59,8 @@ namespace ConsoleUI
                 {
                     Console.WriteLine("Not a valid response. Must be greater than 0."); 
                 }
-
-               
             }
+            Console.WriteLine();
         }
-        
-
     }
 }
