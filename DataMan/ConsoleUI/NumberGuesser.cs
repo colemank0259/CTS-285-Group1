@@ -8,7 +8,7 @@ namespace ConsoleUI
 {
     public class NumberGuesser
     {
-        public static void NumberGuesserGame()
+        public static void GetNumberGuesser()
         {
             //TODO ask the user how many players wish to play
             //TODO track the amount of attempts for each player
