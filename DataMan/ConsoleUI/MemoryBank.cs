@@ -20,8 +20,8 @@ namespace ConsoleUI
             int num2 = 0;
             char[] operators = { '+', '-', '*', '/' };
             char randomOp = ' ';
-            int userAnswer = 0;
-            int correctAnswer = 0;
+            double userAnswer = 0;
+            double correctAnswer = 0;
             int runAnswer = 0;
             bool run = true;
 
@@ -39,7 +39,7 @@ namespace ConsoleUI
                     Console.Write($"{num1} {randomOp} {num2} = ");
                     inputString = Console.ReadLine();
 
-                    if (int.TryParse(inputString, out userAnswer))
+                    if (double.TryParse(inputString, out userAnswer))
                     {
                         switch (randomOp)
                         {
@@ -66,19 +66,17 @@ namespace ConsoleUI
                             Console.WriteLine("Incorrect.");
                         }
 
-                        
+                        // Consume next line for appearance
+                        Console.WriteLine("");
                     }
                     else
                     {
                         Console.WriteLine("Not a valid response. Must be an integer.");
                     }
 
-                    
+                    // TODO Find a way to format correct answers to division problems to only two decimal places
 
                 }
-
-                //// Prompt the user to repeat the activity
-                //run = promptMemoryBankRun(run);
 
                 // Prompt the user to repeat the activity
                 Console.Write("Enter 1 to repeat the activity or 2 to exit: ");
@@ -102,39 +100,7 @@ namespace ConsoleUI
                 }
             } while (run == true);
 
-            
         }
-
-        //public static bool promptMemoryBankRun(bool run)
-        //{
-        //    // Local variables
-        //    string inputString;
-        //    int runAnswer;
-
-        //    // Prompt the user to repeat the activity
-        //    Console.Write("Enter 1 to repeat the activity or 2 to exit: ");
-        //    inputString = Console.ReadLine();
-        //    do
-        //    {
-        //        switch (inputString)
-        //        {
-        //            case "yes":
-        //                run = true;
-        //                break;
-        //            case "no":
-        //                run = false;
-        //                break;
-        //            default:
-        //                Console.WriteLine("Not a valid response. Must enter yes or no.");
-        //                break;
-
-        //        }
-        //    } while (inputString != "yes" | inputString != "no");
-
-        //    return run;
-
-        //}
-        
 
     }
 }

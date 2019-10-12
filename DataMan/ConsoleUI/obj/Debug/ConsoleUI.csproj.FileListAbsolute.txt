@@ -12,3 +12,10 @@ F:\Fall 19\CTS-285\Dataman2\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csprojAssembly
 F:\Fall 19\CTS-285\Dataman2\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
 F:\Fall 19\CTS-285\Dataman2\DataMan\ConsoleUI\obj\Debug\ConsoleUI.exe
 F:\Fall 19\CTS-285\Dataman2\DataMan\ConsoleUI\obj\Debug\ConsoleUI.pdb
+D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe
+D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.pdb
+D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
+D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
+D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.exe
+D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.pdb
