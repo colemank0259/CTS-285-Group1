@@ -8,83 +8,100 @@ namespace ConsoleUI
 {
     public class AnswerChecker
     {
-        public static void RunAnswerChecker()
+        public static void GetAnswerChecker()
         {
-            string symbol = " ";
-            int number1;
-            int number2;
-            int userAnswer = 0;
-            int correctAnswer = 1;
-            int index = 0;
+            // named constant
+            const int QUESTION_AMOUNT = 10;
+            // local variables
+            int num1;
+            int num2;
+            int answeredRight = 0;
 
-            Console.Write("Enter your first number: > ");
-            number1 = int.Parse(Console.ReadLine());
-
-            while (!symbol.Contains("+") && !symbol.Contains("-") && !symbol.Contains("/") && !symbol.Contains("*"))
+            for (int index = 0; index < QUESTION_AMOUNT; index++)
             {
-                Console.Write("Enter a symbol ( +, -, /, * ): > ");
-                symbol = Console.ReadLine();
-            }
+                
+                // inline variables to allow for reset in the forloop
+                string symbol = " ";
+                int userAnswer = 0;
+                int correctAnswer = 1;
+                int attempts = 0;
 
-            Console.Write("Enter your second number: > ");
-            number2 = int.Parse(Console.ReadLine());
+                // Gets the user's first number for calculation by entering class method for validation.
+                Console.WriteLine("\nFirst Number\n--------------");
+                num1 = TryParse.IntTryParse();
 
-            while (index < 2 && userAnswer != correctAnswer)
-            {
-                userAnswer = 0;
-                correctAnswer = 1;
-
-                Console.Write("Enter your answer: > ");
-                userAnswer = int.Parse(Console.ReadLine());
-
-
-                if (symbol.Contains("+"))
+                // Gets a symbol from the user for calculation
+                while (!symbol.Contains("+") && !symbol.Contains("-") && !symbol.Contains("/") && !symbol.Contains("*"))
                 {
-                    correctAnswer = number1 + number2;
+                    Console.Write("\nEnter a symbol ( +, -, /, * ): > ");
+                    symbol = Console.ReadLine();
                 }
-                else if (symbol.Contains("-"))
+
+                // Gets the user's second number for calculation by entering class method for validation.
+                Second:
+                Console.WriteLine("\nSecond Number\n--------------");
+                num2 = TryParse.IntTryParse();
+                    
+                // while loop to make sure the user gets 2 attempts unless they get the right answer
+                while (attempts < 2 && userAnswer != correctAnswer)
                 {
-                    correctAnswer = number1 - number2;
-                }
-                else if (symbol.Contains("/"))
-                {
-                    if (number2 != 0)
+                    // Gets the user's answer for calculation by entering class method for validation.
+                    Console.WriteLine("\nAnswer\n--------------");
+                    userAnswer = TryParse.IntTryParse();
+                    
+                    // if statement allows for creation of the correct answer based on symbol user entered
+                    if (symbol.Contains("+"))
                     {
-                        correctAnswer = number1 / number2;
+                        correctAnswer = num1 + num2;
+                    }
+                    else if (symbol.Contains("-"))
+                    {
+                        correctAnswer = num1 - num2;
+                    }
+                    else if (symbol.Contains("/"))
+                    {
+                        // stops the user from using zero. goto to send user to the second answer input.
+                        if (num2 != 0)
+                        {
+                            correctAnswer = num1 / num2;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Can not divide by zero");
+                            goto Second;
+                        }
+                    }
+                    else if (symbol.Contains("*"))
+                    {
+                        correctAnswer = num1 * num2;
                     }
                     else
                     {
-                        Console.WriteLine("Can not divide by zero");
+                        Console.WriteLine("Invalid input");
                     }
-                }
-                else if (symbol.Contains("*"))
-                {
-                    correctAnswer = number1 * number2;
-                }
-                else
-                {
-                    Console.WriteLine("Invalid input");
+
+
+                    if (userAnswer == correctAnswer)
+                    {
+                        Console.WriteLine($"You are correct {num1} {symbol} {num2} = {userAnswer}");
+                        answeredRight++;
+                    }
+                    else
+                    {
+                        Messages.ErrorMessage();
+                    }
+
+                    attempts++;
                 }
 
 
-                if (userAnswer == correctAnswer)
+                if (userAnswer != correctAnswer)
                 {
-                    Console.WriteLine("You are correct {0} {1} {2} = {3}", number1, symbol, number2, userAnswer);
+                    Console.WriteLine($"{num1} {symbol} {num2} = {correctAnswer}");
                 }
-                else
-                {
-                    Console.WriteLine("Your answer was incorrect!");
-                }
-                
-                index++;
             }
 
-
-            if(userAnswer != correctAnswer)
-            {
-                Console.WriteLine("{0} {1} {2} = {3}", number1, symbol, number2, correctAnswer);
-            }
-            Console.ReadLine();
+            Console.WriteLine($"Correct Answers\tAttemps\n{answeredRight}\t{QUESTION_AMOUNT}");
         }
     }
 }
