@@ -19,7 +19,7 @@ namespace ConsoleUI
                 switch (Messages.GetUserInput())
                 {
                     case "1":
-                        //AnswerChecker();        need to input this class.
+                        AnswerChecker.GetAnswerChecker();      
                         break;
                     case "2":
                         MemoryBank.GetMemoryBank();
