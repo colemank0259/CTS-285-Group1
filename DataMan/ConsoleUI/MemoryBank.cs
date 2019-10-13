@@ -14,19 +14,23 @@ namespace ConsoleUI
             const int QUESTION_AMOUNT = 10;
 
             // Local variables
-            string inputString;
+            string inputString = null;
             Random rand = new Random();
             int num1 = 0;
             int num2 = 0;
             char[] operators = { '+', '-', '*', '/' };
             char randomOp = ' ';
-            double userAnswer = 0;
-            double correctAnswer = 0;
-            int runAnswer = 0;
+            int userAnswer = 0;
+            int correctAnswer = 0;
+            string runAnswer = null;
             bool run = true;
 
             // Display description of the Memory Bank activity
             Console.WriteLine("Enter the correct answer to 10 random math problems.");
+            Console.WriteLine("NOTE: Round answers down to the previous integer.");
+
+            // Consume the next line for appearance
+            Console.WriteLine("");
 
             do
             {
@@ -39,7 +43,7 @@ namespace ConsoleUI
                     Console.Write($"{num1} {randomOp} {num2} = ");
                     inputString = Console.ReadLine();
 
-                    if (double.TryParse(inputString, out userAnswer))
+                    if (int.TryParse(inputString, out userAnswer))
                     {
                         switch (randomOp)
                         {
@@ -74,30 +78,21 @@ namespace ConsoleUI
                         Console.WriteLine("Not a valid response. Must be an integer.");
                     }
 
-                    // TODO Find a way to format correct answers to division problems to only two decimal places
-
                 }
 
                 // Prompt the user to repeat the activity
-                Console.Write("Enter 1 to repeat the activity or 2 to exit: ");
-                inputString = Console.ReadLine();
-                if (int.TryParse(inputString, out runAnswer))
-                {
-                    switch (runAnswer)
-                    {
-                        case 1:
-                            run = true;
-                            break;
-                        case 2:
-                            run = false;
-                            break;
+                Console.Write("Enter yes to repeat the activity or no to exit: ");
+                runAnswer = Console.ReadLine();
 
-                    }
+                if (runAnswer == "yes")
+                {
+                    run = true;
                 }
                 else
                 {
-                    Console.WriteLine("Not a valid response. Must be an integer.");
+                    run = false;
                 }
+
             } while (run == true);
 
         }
