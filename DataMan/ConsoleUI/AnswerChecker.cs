@@ -80,7 +80,7 @@ namespace ConsoleUI
                         Console.WriteLine("Invalid input");
                     }
 
-
+                    // Displays if correct
                     if (userAnswer == correctAnswer)
                     {
                         Console.WriteLine($"You are correct {num1} {symbol} {num2} = {userAnswer}");
@@ -94,7 +94,7 @@ namespace ConsoleUI
                     attempts++;
                 }
 
-
+                // displays after second incorrect answer
                 if (userAnswer != correctAnswer)
                 {
                     Console.WriteLine($"{num1} {symbol} {num2} = {correctAnswer}");
