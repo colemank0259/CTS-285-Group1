@@ -26,6 +26,8 @@ namespace ConsoleUI
                 int correctAnswer = 1;
                 int attempts = 0;
 
+                Console.WriteLine("Welcome to Answer Checker!");
+
                 // Gets the user's first number for calculation by entering class method for validation.
                 Console.WriteLine("\nFirst Number\n--------------");
                 num1 = TryParse.IntTryParse();
