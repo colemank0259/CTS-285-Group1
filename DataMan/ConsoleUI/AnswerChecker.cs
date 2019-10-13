@@ -26,6 +26,8 @@ namespace ConsoleUI
                 int correctAnswer = 1;
                 int attempts = 0;
 
+                Console.WriteLine("Welcome to Answer Checker!");
+
                 // Gets the user's first number for calculation by entering class method for validation.
                 Console.WriteLine("\nFirst Number\n--------------");
                 num1 = TryParse.IntTryParse();
@@ -80,7 +82,7 @@ namespace ConsoleUI
                         Console.WriteLine("Invalid input");
                     }
 
-
+                    // Displays if correct
                     if (userAnswer == correctAnswer)
                     {
                         Console.WriteLine($"You are correct {num1} {symbol} {num2} = {userAnswer}");
@@ -94,7 +96,7 @@ namespace ConsoleUI
                     attempts++;
                 }
 
-
+                // displays after second incorrect answer
                 if (userAnswer != correctAnswer)
                 {
                     Console.WriteLine($"{num1} {symbol} {num2} = {correctAnswer}");

@@ -22,7 +22,7 @@ namespace ConsoleUI
             char randomOp = ' ';
             int userAnswer = 0;
             int correctAnswer = 0;
-            
+
             // Loop for creating math problems
             for (int i = 0; i <= QUESTION_AMOUNT; i++)
             {
@@ -57,10 +57,11 @@ namespace ConsoleUI
                 }
                 else
                 {
-                    Console.WriteLine("Not a valid response. Must be greater than 0."); 
+                    Console.WriteLine("Not a valid response. Must be greater than 0.");
                 }
             }
             Console.WriteLine();
+            
         }
     }
 }
