@@ -10,48 +10,50 @@ namespace ConsoleUI
     {
         public static void GetNumberGuesser()
         {
-            //TODO ask the user how many players wish to play
-            //TODO track the amount of attempts for each player
+            int numOfPlayers;
+            int lowNum = 0;
 
-            string userInfo;
-            int userGuess;
-            int count = 1;
-            int inc = 0;
-            bool correct = false;
+            Console.Write("How many players wish to play > ");
+            numOfPlayers = TryParse.IntTryParse();
 
-
-            Random rnd = new Random();
-            int number = rnd.Next(11);      //TODO change to rnd.Next(9, 101)
-
-            do
+            for (int i = 1; i <= numOfPlayers; i++)
             {
-                Console.Write("Enter your guess");      //TODO validate user input is between 9 - 100.
-                Console.Write(" > ");
-                userInfo = Console.ReadLine();
+                List<int> guessAmount = new List<int>();
+                int userGuess;
+                int count = 1;
+                bool correct = false;
 
-                if (int.TryParse(userInfo, out userGuess))
+                Random rnd = new Random();
+                int number = rnd.Next(9, 101);      //TODO change to rnd.Next(9, 101)
+
+                do
                 {
+                    Console.Write($"Please {i} enter your guess");
+                    Console.Write(" > ");
+                    userGuess = TryParse.IntTryParse();
+
                     if (userGuess != number)
                     {
                         Console.WriteLine("Incorrect guess!");
-                        //Console.WriteLine($"The number is between {number - inc} and {number + inc}");
                         Console.WriteLine($"The number is between {number - 2} and {number + 2}.");
                         Console.WriteLine();
                         count++;
-                        //inc =+ 2;
                     }
                     else if (userGuess == number)
                     {
                         correct = true;
                     }
-                }
-                else
-                {
-                    Console.WriteLine("Not valid input!");
-                }
-            } while (correct == false);
 
-            Console.WriteLine($"It took you {count} time(s) to guess the number right.");
+                } while (correct == false);
+
+                Console.WriteLine($"It took you {count} time(s) to guess the number right.");
+                Console.ReadLine();
+
+                guessAmount.Add(count);
+                lowNum = guessAmount.Min();
+            }
+            Console.WriteLine($"");
+            Console.WriteLine($"The lowest num was {lowNum}");
             Console.ReadLine();
         }
     }
