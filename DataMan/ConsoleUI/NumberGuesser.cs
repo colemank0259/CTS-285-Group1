@@ -12,13 +12,14 @@ namespace ConsoleUI
         {
             int numOfPlayers;
             int lowNum = 0;
+            List<int> guessAmount = new List<int>();
 
             Console.Write("How many players wish to play > ");
             numOfPlayers = TryParse.IntTryParse();
 
             for (int i = 1; i <= numOfPlayers; i++)
             {
-                List<int> guessAmount = new List<int>();
+               
                 int userGuess;
                 int count = 1;
                 bool correct = false;
@@ -28,7 +29,7 @@ namespace ConsoleUI
 
                 do
                 {
-                    Console.Write($"Please {i} enter your guess");
+                    Console.Write($"Player {i} enter your guess");
                     Console.Write(" > ");
                     userGuess = TryParse.IntTryParse();
 
