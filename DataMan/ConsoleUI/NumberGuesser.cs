@@ -11,15 +11,15 @@ namespace ConsoleUI
         public static void GetNumberGuesser()
         {
             int numOfPlayers;
-            int lowNum = 0;
-            List<int> guessAmount = new List<int>();
+
+            Player myPlayer = new Player();
+            List<Player> score = new List<Player>();
 
             Console.Write("How many players wish to play > ");
             numOfPlayers = TryParse.IntTryParse();
 
             for (int i = 1; i <= numOfPlayers; i++)
             {
-               
                 int userGuess;
                 int count = 1;
                 bool correct = false;
@@ -47,14 +47,17 @@ namespace ConsoleUI
 
                 } while (correct == false);
 
-                Console.WriteLine($"It took you {count} time(s) to guess the number right.");
-                Console.ReadLine();
-
-                guessAmount.Add(count);
-                lowNum = guessAmount.Min();
+                score.Add(new Player(i, count));
+                score.Sort(Player.CompareGuesses);
             }
-            Console.WriteLine($"");
-            Console.WriteLine($"The lowest num was {lowNum}");
+
+            foreach (Player i in score)
+            {
+                Console.WriteLine($"Player {i.Players} took {i.GuessAmount} to guess the right number.");
+                Console.ReadLine();
+            }
+
+            Console.WriteLine($"Player {score[0].Players} wins with only {score[0].GuessAmount} tries");
             Console.ReadLine();
         }
     }
