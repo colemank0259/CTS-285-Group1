@@ -10,7 +10,26 @@ namespace ConsoleUI
     {
         public static void CreateDataBank()
         {
- 
+            bool exit = false;
+
+            do
+            {
+                switch(Messages.DataBankMenu())
+                {
+                    case "1":
+                        //TODO Parent
+                        break;
+                    case "2":
+                        //TODO Child
+                        break;
+                    case "3":
+                        exit = true;
+                        break;
+                    default:
+                        Messages.ErrorMessage();
+                        break;
+                }
+            } while (exit == false);
             
         }
     }

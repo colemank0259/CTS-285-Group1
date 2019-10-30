@@ -19,6 +19,16 @@ namespace ConsoleUI
             Console.Write("> ");
         }
 
+        public static string DataBankMenu()
+        {
+            Console.WriteLine("1. Continue as a Parent/Teacher! (Enter in problems)");
+            Console.WriteLine("2. Continue as a Child/Student! (Answer Problems)");
+            Console.WriteLine("3. Exit!");
+            Console.Write("Enter 1/2/3: > ");
+
+            return Console.ReadLine();
+        }
+
         public static string GetUserInput()
         {
             return Console.ReadLine();
