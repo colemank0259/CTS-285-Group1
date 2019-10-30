@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleUI
 {
-    public class MemoryBank
+    public class RandomProblem
     {
-        public static void getMemoryBank()
+        public static void GetRandomProblem()
         {
             // Named constants
             const int QUESTION_AMOUNT = 10;
@@ -96,5 +96,6 @@ namespace ConsoleUI
             } while (run == true);
 
         }
+
     }
 }

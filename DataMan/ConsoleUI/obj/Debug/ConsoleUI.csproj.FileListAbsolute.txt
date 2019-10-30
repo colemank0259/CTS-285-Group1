@@ -1,21 +1,23 @@
-C:\Users\colemank0259\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe.config
-C:\Users\colemank0259\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe
-C:\Users\colemank0259\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.pdb
-C:\Users\colemank0259\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
-C:\Users\colemank0259\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
-C:\Users\colemank0259\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.exe
-C:\Users\colemank0259\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.pdb
-F:\Fall 19\CTS-285\Dataman2\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe.config
-F:\Fall 19\CTS-285\Dataman2\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe
-F:\Fall 19\CTS-285\Dataman2\DataMan\ConsoleUI\bin\Debug\ConsoleUI.pdb
-F:\Fall 19\CTS-285\Dataman2\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
-F:\Fall 19\CTS-285\Dataman2\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
-F:\Fall 19\CTS-285\Dataman2\DataMan\ConsoleUI\obj\Debug\ConsoleUI.exe
-F:\Fall 19\CTS-285\Dataman2\DataMan\ConsoleUI\obj\Debug\ConsoleUI.pdb
-D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe.config
-D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe
-D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
+C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.pdb
+
 D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
 D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
 D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.exe
 D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.pdb
+
+D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe
+D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.pdb
+E:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+E:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe
+E:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.pdb
+E:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
+E:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
+E:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.exe
+E:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.pdb

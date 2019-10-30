@@ -8,50 +8,66 @@ namespace ConsoleUI
 {
     public class NumberGuesser
     {
-        public static void NumberGuesserGame()
+        public static void GetNumberGuesser()
         {
-            //TODO ask the user how many players wish to play
-            //TODO track the amount of attempts for each player
-
-            string userInfo;
-            int userGuess;
-            int count = 1;
-            bool correct = false;
+            int numOfPlayers;
 
             Random rnd = new Random();
-            int number = rnd.Next(11);      //TODO change to rnd.Next(9, 101)
+            List<int> score = new List<int>();
 
-            do
+            Console.Write("How many players wish to play > ");
+            numOfPlayers = TryParse.NewTryParse(Console.ReadLine());
+
+            for (int i = 1; i <= numOfPlayers; i++)
             {
-                Console.Write("Enter your guess");      //TODO validate user input is between 9 - 100.
-                Console.Write(" > ");
-                userInfo = Console.ReadLine();
+                int userGuess;
+                int count = 1;
+                bool correct = false;
+                int number = rnd.Next(9, 101);          //TODO change to correct numbers.
 
-                if (int.TryParse(userInfo, out userGuess))
+                do
                 {
-                    if (userGuess != number)
+                    Console.Write($"Player {i} enter your guess");
+                    Console.Write(" > ");
+                    userGuess = TryParse.NewTryParse(Console.ReadLine());
+
+                    if (userGuess > number)
                     {
                         Console.WriteLine("Incorrect guess!");
-                        Console.WriteLine($"The number is between {number - 2} and {number + 2}.");
+                        Console.WriteLine($"The number is between 9 and {userGuess}.");
                         Console.WriteLine();
                         count++;
                     }
+                    else if (userGuess < number)
+                    {
+                        Console.WriteLine("Incorrect guess!");
+                        Console.WriteLine($"The number is between {userGuess} and 100.");
+                        Console.WriteLine();
+                        count++;
+                    }
+
+
+
+                    //if (userGuess != number)
+                    //{
+                    //    Console.WriteLine("Incorrect guess!");
+                    //    Console.WriteLine($"The number is between {number} and {number}.");
+                    //    Console.WriteLine();
+                    //    count++;
+                    //}
                     else if (userGuess == number)
                     {
                         correct = true;
                     }
-                }
-                else
-                {
-                    Console.WriteLine("Not valid input! ");
-                    Console.WriteLine("Enter a number between 9 - 100!");
-                    Console.WriteLine();
-                }
+                } while (correct == false);
 
-            } while (correct == false);
+                score.Add(count);
+            }
 
-            Console.WriteLine($"It took you {count} time(s) to guess the number right.");
-            Console.ReadLine();
+            for(int j = 0; j < score.Count; j ++)
+            {
+                Console.WriteLine($"Player {j+1} took {score[j]} guesses to get the right number.");
+            }
         }
     }
 }
