@@ -29,5 +29,17 @@ namespace ConsoleUI
             }
             return userOutput;
         }
+
+        public static int NewTryParse(string input)
+        {
+            int num = 0;
+
+            while(!int.TryParse(input, out num))
+            {
+                Console.WriteLine("Must be a number! > ");
+                input = Console.ReadLine();
+            }
+            return num;
+        }
     }
 }
