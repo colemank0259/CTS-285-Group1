@@ -22,7 +22,7 @@ namespace ConsoleUI
                         AnswerChecker.GetAnswerChecker();
                         break;
                     case "2":
-                        RandomProblem.GetRandomProblem();
+                        MemoryBank.GetRandomProblem();
                         break;
                     case "3":
                         NumberGuesser.GetNumberGuesser();
