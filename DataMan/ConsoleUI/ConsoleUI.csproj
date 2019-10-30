@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AnswerChecker.cs" />
     <Compile Include="MemoryBank.cs" />
+    <Compile Include="RandomProblem.cs" />
     <Compile Include="Messages.cs" />
     <Compile Include="NumberGuesser.cs" />
     <Compile Include="Program.cs" />

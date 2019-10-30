@@ -19,10 +19,10 @@ namespace ConsoleUI
                 switch (Messages.GetUserInput())
                 {
                     case "1":
-                        AnswerChecker.GetAnswerChecker();      
+                        AnswerChecker.GetAnswerChecker();
                         break;
                     case "2":
-                        MemoryBank.GetMemoryBank();
+                        RandomProblem.GetRandomProblem();
                         break;
                     case "3":
                         NumberGuesser.GetNumberGuesser();
