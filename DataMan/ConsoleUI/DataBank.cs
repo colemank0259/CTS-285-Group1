@@ -8,7 +8,7 @@ namespace ConsoleUI
 {
     public class DataBank
     {
-        public static void CreateDataBank()
+        public static void GetDataBank()
         {
             bool exit = false;
 
@@ -17,7 +17,7 @@ namespace ConsoleUI
                 switch(Messages.DataBankMenu())
                 {
                     case "1":
-                        //TODO Parent
+                        Parent.GetParentEntry();
                         break;
                     case "2":
                         //TODO Child

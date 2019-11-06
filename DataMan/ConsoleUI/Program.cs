@@ -25,9 +25,12 @@ namespace ConsoleUI
                         MemoryBank.GetRandomProblem();
                         break;
                     case "3":
-                        NumberGuesser.GetNumberGuesser();
+                        DataBank.GetDataBank();
                         break;
                     case "4":
+                        NumberGuesser.GetNumberGuesser();
+                        break;
+                    case "5":
                         exit = true;
                         break;
                     default:
