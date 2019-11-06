@@ -12,7 +12,6 @@ namespace DataManLibrary
         public static void GetChildAnswers()
         {
             // Local variables
-            
             int correctUserAnswers = 0;
             int incorrectUserAnswers = 0;
             List<string> answers = new List<string>();
