@@ -11,7 +11,8 @@ namespace DataManLibrary
     {
         public static void GetChildAnswers()
         {
-            double userAnswer = 0;
+            // Local variables
+            
             int correctUserAnswers = 0;
             int incorrectUserAnswers = 0;
             List<string> answers = new List<string>();
@@ -35,23 +36,34 @@ namespace DataManLibrary
 
             for(int i = 0; i < 10; i++)
             {
-                Console.Write($"{firstNumber[i]} {symbol[i]} {firstNumber[i]} = ");
-                userAnswer = double.Parse(Console.ReadLine());
+                int attempts = 0;
+                double userAnswer = -1;
 
-                if (userAnswer == answers[i])
+                while (attempts < 2 && userAnswer != answers[i])
                 {
-                    Console.WriteLine("Correct!");
-                    correctUserAnswers++;
+                    Console.Write($"{firstNumber[i]} {symbol[i]} {firstNumber[i]} = ");
+                    userAnswer = TryParse.DoubleTryParse(Console.ReadLine());
+
+                    if (userAnswer == answers[i])
+                    {
+                        Console.WriteLine("Correct!");
+                        correctUserAnswers++;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Incorrect.");
+                        incorrectUserAnswers++;
+                    }
+
+                    attempts++;
                 }
-                else
-                {
-                    Console.WriteLine("Incorrect.");
-                    incorrectUserAnswers++;
-                }
+
+                
             }
 
             Console.WriteLine($"Correct Answers: {correctUserAnswers}");
             Console.WriteLine($"Incorrect Answers: {incorrectUserAnswers}");
+            Console.WriteLine($"Total Questions: {answers.Count}");
         }
     }
 }
