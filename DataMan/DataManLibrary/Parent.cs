@@ -11,8 +11,10 @@ namespace DataManLibrary
     {
         public static void GetParentEntry()
         {
-            var equations = "equations";
-            var answers = "answers";
+            var firstNumber = "First Number";
+            var symbol = "Symbol";
+            var secondNumber = "Second Number";
+            var answer = "answers";
             try
             {
                 StreamWriter outputFile;
@@ -22,15 +24,21 @@ namespace DataManLibrary
                 Console.WriteLine("Example: first enter problem (2+2=)\nThen enter solution (4)");
                 for (int entries = 1; entries <= 10; entries ++)
                 {
-                    var newLine = string.Format($"{equations}, {answers}");
+                    var newLine = string.Format($"{firstNumber}, {symbol}, {secondNumber}, {answer}");
 
                     outputFile.WriteLine(newLine);
 
-                    Console.Write($"\nEnter Problem Number {entries}! > ");
-                    equations = Console.ReadLine();
+                    Console.Write($"\nProblem {entries}: Enter your First Number! > ");
+                    firstNumber = Console.ReadLine();
 
-                    Console.Write($"\nEnter Solution number {entries}! > ");
-                    answers =  Console.ReadLine();
+                    Console.Write($"\nProblem {entries}: Enter your Symbol! > ");
+                    symbol = Console.ReadLine();
+
+                    Console.Write($"\nProblem {entries}: Enter your Second Number! > ");
+                    secondNumber =  Console.ReadLine();
+
+                    Console.Write($"\nProblem {entries}: Enter your Answer! > ");
+                    answer = Console.ReadLine();
                 }
                 
                 outputFile.Close();

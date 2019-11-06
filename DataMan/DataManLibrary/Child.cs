@@ -23,8 +23,11 @@ namespace DataManLibrary
                     var line = fileReader.ReadLine();
                     var values = line.Split(',');
 
-                    equations.Add(values[0].ToString());
-                    answers.Add(values[1].ToString());
+                    firstNumber.Add(values[0].ToString());
+                    symbol.Add(values[1].ToString());
+                    secondNumber.Add(values[2].ToString());
+                    answers.Add(values[3].ToString());
+
                 }
             }
         }
