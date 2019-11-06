@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleUI
+namespace DataManLibrary
 {
     public class AnswerChecker
     {
@@ -17,6 +17,8 @@ namespace ConsoleUI
             int num2;
             int answeredRight = 0;
 
+            Console.WriteLine("Welcome to Answer Checker!");
+
             for (int index = 0; index < QUESTION_AMOUNT; index++)
             {
                 
@@ -25,8 +27,6 @@ namespace ConsoleUI
                 int userAnswer = 0;
                 int correctAnswer = 1;
                 int attempts = 0;
-
-                Console.WriteLine("Welcome to Answer Checker!");
 
                 // Gets the user's first number for calculation by entering class method for validation.
                 Console.WriteLine("\nFirst Number\n--------------");

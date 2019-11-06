@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleUI
+namespace DataManLibrary
 {
-    public class RandomProblem
+    public class MemoryBank
     {
         public static void GetRandomProblem()
         {

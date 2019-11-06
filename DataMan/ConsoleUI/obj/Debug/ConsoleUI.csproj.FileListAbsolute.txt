@@ -20,4 +20,23 @@ E:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.
 E:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
 E:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
 E:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.exe
+
 E:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.pdb
+
+E:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.pdb
+F:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
+F:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.exe
+F:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.pdb
+F:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+F:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe
+F:\Fall 19\CTS-285\Dataman\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\Null\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\Null\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\Null\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\Null\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
+C:\Users\Null\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\Null\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Users\Null\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.pdb
+C:\Users\Null\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\DataManLibrary.dll
+C:\Users\Null\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\DataManLibrary.pdb
+C:\Users\Null\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
