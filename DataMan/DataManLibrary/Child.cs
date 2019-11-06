@@ -11,7 +11,9 @@ namespace DataManLibrary
     {
         public static void GetChildAnswers()
         {
-            List<string> equations = new List<string>();
+            double userAnswer = 0;
+            int correctUserAnswers = 0;
+            int incorrectUserAnswers = 0;
             List<string> answers = new List<string>();
 
             using (StreamReader fileReader = new StreamReader("Parent_Teacher.csv"))
@@ -30,6 +32,26 @@ namespace DataManLibrary
 
                 }
             }
+
+            for(int i = 0; i < 10; i++)
+            {
+                Console.Write($"{firstNumber[i]} {symbol[i]} {firstNumber[i]} = ");
+                userAnswer = double.Parse(Console.ReadLine());
+
+                if (userAnswer == answers[i])
+                {
+                    Console.WriteLine("Correct!");
+                    correctUserAnswers++;
+                }
+                else
+                {
+                    Console.WriteLine("Incorrect.");
+                    incorrectUserAnswers++;
+                }
+            }
+
+            Console.WriteLine($"Correct Answers: {correctUserAnswers}");
+            Console.WriteLine($"Incorrect Answers: {incorrectUserAnswers}");
         }
     }
 }
