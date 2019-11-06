@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleUI
+namespace DataManLibrary
 {
     public class DataBank
     {
@@ -20,7 +20,7 @@ namespace ConsoleUI
                         Parent.GetParentEntry();
                         break;
                     case "2":
-                        //TODO Child
+                        Child.GetChildAnswers();
                         break;
                     case "3":
                         exit = true;

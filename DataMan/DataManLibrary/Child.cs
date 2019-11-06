@@ -5,12 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace ConsoleUI
+namespace DataManLibrary
 {
     public class Child
     {
         public static void GetChildAnswers()
         {
+            List<string> equations = new List<string>();
             List<string> answers = new List<string>();
 
             using (StreamReader fileReader = new StreamReader("Parent_Teacher.csv"))
@@ -22,12 +23,8 @@ namespace ConsoleUI
                     var line = fileReader.ReadLine();
                     var values = line.Split(',');
 
-                    answers.Add(values[0].ToString());
-                }
-
-                foreach(string answer in answers)
-                {
-                    Console.WriteLine(answer);
+                    equations.Add(values[0].ToString());
+                    answers.Add(values[1].ToString());
                 }
             }
         }

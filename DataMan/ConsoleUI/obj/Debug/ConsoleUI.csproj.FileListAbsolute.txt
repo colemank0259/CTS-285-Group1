@@ -32,3 +32,6 @@ C:\Users\Null\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\Consol
 C:\Users\Null\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
 C:\Users\Null\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.exe
 C:\Users\Null\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.pdb
+C:\Users\Null\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\DataManLibrary.dll
+C:\Users\Null\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\DataManLibrary.pdb
+C:\Users\Null\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
