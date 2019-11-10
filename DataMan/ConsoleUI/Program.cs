@@ -10,14 +10,14 @@ namespace ConsoleUI
     class Program
     {
         static void Main(string[] args)
-        { 
-            bool exit = false;
+        {
+            bool exit = false;      //variable to exit do while loop.
 
             do
             {
-                Messages.Menu();
+                Messages.Menu();        //Displays a menu.
 
-                switch (Messages.GetUserInput())
+                switch (Messages.GetUserInput())    //switch based on users input.
                 {
                     case "1":
                         AnswerChecker.GetAnswerChecker();
@@ -38,7 +38,7 @@ namespace ConsoleUI
                         Messages.ErrorMessage();
                         break;
                 }
-            } while (exit == false);
+            } while (exit == false);        //breaks out of while loop.
         }
     }
 }

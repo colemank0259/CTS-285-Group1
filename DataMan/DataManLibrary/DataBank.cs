@@ -14,7 +14,7 @@ namespace DataManLibrary
 
             do
             {
-                switch(Messages.DataBankMenu())
+                switch(Messages.DataBankMenu())     // Run a method based on user input.
                 {
                     case "1":
                         Parent.GetParentEntry();

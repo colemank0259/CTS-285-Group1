@@ -10,64 +10,56 @@ namespace DataManLibrary
     {
         public static void GetNumberGuesser()
         {
-            int numOfPlayers;
+            int numOfPlayers;       // Local variable.
 
-            Random rnd = new Random();
-            List<int> score = new List<int>();
+            Random rnd = new Random();      // Create a new random instance.
+            List<int> score = new List<int>();      // Create a list of integers.
 
+            Console.WriteLine("\nWelcome to Number Guesser!");
+            Console.WriteLine("This program allows you try to guess a random number between 9 and 100.");
+            Console.WriteLine("You can play by yourself or with friends.\n");
             Console.Write("How many players wish to play > ");
-            numOfPlayers = TryParse.NewTryParse(Console.ReadLine());
+            numOfPlayers = TryParse.IntTryParse(Console.ReadLine());
 
+            // For loop to iterate through for each player.
             for (int i = 1; i <= numOfPlayers; i++)
             {
                 int userGuess;
                 int count = 1;
                 bool correct = false;
-                int number = rnd.Next(9, 101);          //TODO change to correct numbers.
+                int number = rnd.Next(9, 101);   
+                int rangeNum = rnd.Next(1, 2);
 
+                // Run do while loop until user guesses right answer.
                 do
                 {
-                    Console.Write($"Player {i} enter your guess");
+                    Console.Write($"\nPlayer {i} enter your guess");
                     Console.Write(" > ");
-                    userGuess = TryParse.NewTryParse(Console.ReadLine());
+                    userGuess = TryParse.IntTryParse(Console.ReadLine());
 
-                    if (userGuess > number)
+                    // Run through this loop if user guesses wrong answer.
+                    if (userGuess != number)
                     {
                         Console.WriteLine("Incorrect guess!");
-                        Console.WriteLine($"The number is between 9 and {userGuess}.");
+                        Console.WriteLine($"The number is between {number - rangeNum} and {number + rangeNum}.");
                         Console.WriteLine();
-                        count++;
+                        count++;    // Accumulation for incorrect guesses.
                     }
-                    else if (userGuess < number)
-                    {
-                        Console.WriteLine("Incorrect guess!");
-                        Console.WriteLine($"The number is between {userGuess} and 100.");
-                        Console.WriteLine();
-                        count++;
-                    }
-
-
-
-                    //if (userGuess != number)
-                    //{
-                    //    Console.WriteLine("Incorrect guess!");
-                    //    Console.WriteLine($"The number is between {number} and {number}.");
-                    //    Console.WriteLine();
-                    //    count++;
-                    //}
                     else if (userGuess == number)
                     {
                         correct = true;
                     }
                 } while (correct == false);
 
-                score.Add(count);
+                score.Add(count);   // Add the amount of guesses from user to list.
             }
 
-            for(int j = 0; j < score.Count; j ++)
+            Console.WriteLine();
+            for(int j = 0; j < score.Count; j ++)       // Displays the contents of the list.
             {
-                Console.WriteLine($"Player {j+1} took {score[j]} guesses to get the right number.");
+                Console.WriteLine($"Player {j+1} Total Guesses: {score[j]}");
             }
+            Console.WriteLine();
         }
     }
 }

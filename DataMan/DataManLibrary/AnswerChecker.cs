@@ -17,7 +17,9 @@ namespace DataManLibrary
             int num2;
             int answeredRight = 0;
 
-            Console.WriteLine("Welcome to Answer Checker!");
+            Console.WriteLine("\nWelcome to Answer Checker!");
+            Console.WriteLine("This program allows you enter a math problem");
+            Console.WriteLine("and the program will give you the correct answer.");
 
             for (int index = 0; index < QUESTION_AMOUNT; index++)
             {
@@ -29,27 +31,24 @@ namespace DataManLibrary
                 int attempts = 0;
 
                 // Gets the user's first number for calculation by entering class method for validation.
-                Console.WriteLine("\nFirst Number\n--------------");
-                num1 = TryParse.IntTryParse();
+                Console.Write("\nFirst Number: > ");
+                num1 = TryParse.IntTryParse(Console.ReadLine());
 
-                // Gets a symbol from the user for calculation
-                while (!symbol.Contains("+") && !symbol.Contains("-") && !symbol.Contains("/") && !symbol.Contains("*"))
-                {
-                    Console.Write("\nEnter a symbol ( +, -, /, * ): > ");
-                    symbol = Console.ReadLine();
-                }
+                // Gets the user's symbol for calculation by entering class method for validation.
+                Console.Write("Enter a symbol (+, -, /, *): > ");
+                symbol = TryParse.SymbolParse(Console.ReadLine());
 
                 // Gets the user's second number for calculation by entering class method for validation.
                 Second:
-                Console.WriteLine("\nSecond Number\n--------------");
-                num2 = TryParse.IntTryParse();
+                Console.Write("Second Number: > ");
+                num2 = TryParse.IntTryParse(Console.ReadLine());
                     
                 // while loop to make sure the user gets 2 attempts unless they get the right answer
                 while (attempts < 2 && userAnswer != correctAnswer)
                 {
                     // Gets the user's answer for calculation by entering class method for validation.
-                    Console.WriteLine("\nAnswer\n--------------");
-                    userAnswer = TryParse.IntTryParse();
+                    Console.Write("Answer: > ");
+                    userAnswer = TryParse.IntTryParse(Console.ReadLine());
                     
                     // if statement allows for creation of the correct answer based on symbol user entered
                     if (symbol.Contains("+"))
@@ -85,7 +84,7 @@ namespace DataManLibrary
                     // Displays if correct
                     if (userAnswer == correctAnswer)
                     {
-                        Console.WriteLine($"You are correct {num1} {symbol} {num2} = {userAnswer}");
+                        Console.WriteLine($"Correct! {num1} {symbol} {num2} = {userAnswer}");
                         answeredRight++;
                     }
                     else
@@ -102,8 +101,10 @@ namespace DataManLibrary
                     Console.WriteLine($"{num1} {symbol} {num2} = {correctAnswer}");
                 }
             }
-
-            Console.WriteLine($"Correct Answers\tAttemps\n{answeredRight}\t{QUESTION_AMOUNT}");
+            Console.WriteLine();
+            Console.WriteLine($"Correct Answers: {answeredRight}");     // displays amount answered right
+            Console.WriteLine($"Total Questions: {QUESTION_AMOUNT}");   // dipslays total amount of questions asked
+            Console.WriteLine();
         }
     }
 }

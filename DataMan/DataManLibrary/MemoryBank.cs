@@ -14,88 +14,73 @@ namespace DataManLibrary
             const int QUESTION_AMOUNT = 10;
 
             // Local variables
-            string inputString = null;
             Random rand = new Random();
             int num1 = 0;
             int num2 = 0;
             char[] operators = { '+', '-', '*', '/' };
             char randomOp = ' ';
-            int userAnswer = 0;
+            int userAnswer = -1; 
             int correctAnswer = 0;
-            string runAnswer = null;
-            bool run = true;
+            int correct = 0;
 
             // Display description of the Memory Bank activity
-            Console.WriteLine("Enter the correct answer to 10 random math problems.");
+            Console.WriteLine("\nWelcome to Memory Bank!");
+            Console.WriteLine("This program will give you 10 math problems that you can solve.");
+            Console.WriteLine("You will get two attempts to get the answer correct.");
             Console.WriteLine("NOTE: Round answers down to the previous integer.");
 
             // Consume the next line for appearance
             Console.WriteLine("");
 
-            do
+            // Loop for creating math problems
+            for (int i = 0; i < QUESTION_AMOUNT; i++)
             {
-                // Loop for creating math problems
-                for (int i = 0; i <= QUESTION_AMOUNT; i++)
+                int attempts = 0;
+                num1 = rand.Next(1, 10);
+                num2 = rand.Next(1, 10);
+                randomOp = operators[rand.Next(operators.Length)];
+
+                switch (randomOp)
                 {
-                    num1 = rand.Next(1, 10);
-                    num2 = rand.Next(1, 10);
-                    randomOp = operators[rand.Next(operators.Length)];
+                    case '+':
+                        correctAnswer = num1 + num2;
+                        break;
+                    case '-':
+                        correctAnswer = num1 - num2;
+                        break;
+                    case '*':
+                        correctAnswer = num1 * num2;
+                        break;
+                    case '/':
+                        correctAnswer = num1 / num2;
+                        break;
+                }
+
+                while (attempts < 2 && userAnswer != correctAnswer)
+                {
                     Console.Write($"{num1} {randomOp} {num2} = ");
-                    inputString = Console.ReadLine();
+                    userAnswer = TryParse.IntTryParse(Console.ReadLine());
 
-                    if (int.TryParse(inputString, out userAnswer))
+                    if(userAnswer == correctAnswer)
                     {
-                        switch (randomOp)
-                        {
-                            case '+':
-                                correctAnswer = num1 + num2;
-                                break;
-                            case '-':
-                                correctAnswer = num1 - num2;
-                                break;
-                            case '*':
-                                correctAnswer = num1 * num2;
-                                break;
-                            case '/':
-                                correctAnswer = num1 / num2;
-                                break;
-                        }
-
-                        if (userAnswer == correctAnswer)
-                        {
-                            Console.WriteLine("Correct!");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Incorrect.");
-                        }
-
-                        // Consume next line for appearance
-                        Console.WriteLine("");
+                        Console.WriteLine("Correct!");
+                        correct++;
                     }
                     else
                     {
-                        Console.WriteLine("Not a valid response. Must be an integer.");
+                        Console.WriteLine("Incorrect!");
                     }
-
+                    attempts++;
                 }
 
-                // Prompt the user to repeat the activity
-                Console.Write("Enter yes to repeat the activity or no to exit: ");
-                runAnswer = Console.ReadLine();
+                // Consume next line for appearance
+                Console.WriteLine("");
+            }
 
-                if (runAnswer == "yes")
-                {
-                    run = true;
-                }
-                else
-                {
-                    run = false;
-                }
-
-            } while (run == true);
-
+            Console.WriteLine();
+            Console.WriteLine($"Correct Answers: {correct}");     // displays amount answered right
+            Console.WriteLine($"Total Questions: {QUESTION_AMOUNT}");   // dipslays total amount of questions asked
+            Console.WriteLine();
         }
-
     }
 }

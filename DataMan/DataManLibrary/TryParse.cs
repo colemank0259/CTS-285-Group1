@@ -8,29 +8,7 @@ namespace DataManLibrary
 {
     public class TryParse
     {
-        public static int IntTryParse()
-        {
-            string userInput = null;
-            int userOutput = 0;
-
-            while (userInput == null)
-            {
-                Console.Write("Enter a number: > ");
-                userInput = Console.ReadLine();
-                if (int.TryParse(userInput, out userOutput))
-                {
-                    return userOutput;
-                }
-                else
-                {
-                    userInput = null;
-                    Console.WriteLine("Must be a number!");
-                }
-            }
-            return userOutput;
-        }
-
-        public static int NewTryParse(string input)
+        public static int IntTryParse(string input)
         {
             int num = 0;
 
@@ -40,6 +18,28 @@ namespace DataManLibrary
                 input = Console.ReadLine();
             }
             return num;
+        }
+
+        public static double DoubleTryParse(string input)
+        {
+            double num = 0;
+
+            while(!double.TryParse(input, out num))
+            {
+                Console.WriteLine("Must be a number! > ");
+                input = Console.ReadLine();
+            }
+            return num;
+        }
+
+        public static string SymbolParse(string input)
+        {
+            while (input != "+" && input != "-" && input != "*" && input != "/")
+            {
+                Console.Write("Enter an operator: (+, -, *, /) > ");
+                input = Console.ReadLine();
+            }
+            return input;
         }
     }
 }
