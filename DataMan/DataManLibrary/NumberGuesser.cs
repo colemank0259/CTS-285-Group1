@@ -28,7 +28,8 @@ namespace DataManLibrary
                 int count = 1;
                 bool correct = false;
                 int number = rnd.Next(9, 101);   
-                int rangeNum = rnd.Next(1, 2);
+                int rangeNum = rnd.Next(1, 25);
+                int rangeNum2 = rnd.Next(1, 25);
 
                 // Run do while loop until user guesses right answer.
                 do
@@ -41,7 +42,7 @@ namespace DataManLibrary
                     if (userGuess != number)
                     {
                         Console.WriteLine("Incorrect guess!");
-                        Console.WriteLine($"The number is between {number - rangeNum} and {number + rangeNum}.");
+                        Console.WriteLine($"The number is between {number - rangeNum} and {number + rangeNum2}.");
                         Console.WriteLine();
                         count++;    // Accumulation for incorrect guesses.
                     }

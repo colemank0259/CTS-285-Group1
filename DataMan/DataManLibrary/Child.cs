@@ -45,7 +45,7 @@ namespace DataManLibrary
             Console.WriteLine("This program will give you 10 math problems that you can solve.");
             Console.WriteLine("You will get two attempts to get the answer correct.");
 
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < answers.Count(); i++)
             {
                 int attempts = 0;
                 double userAnswer = -1000000;

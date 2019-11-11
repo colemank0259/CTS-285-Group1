@@ -10,9 +10,9 @@ namespace DataManLibrary
     {
         public static void GetAnswerChecker()
         {
-            // named constant
+            // Named constant
             const int QUESTION_AMOUNT = 10;
-            // local variables
+            // Local variables
             int num1;
             int num2;
             int answeredRight = 0;
@@ -24,7 +24,7 @@ namespace DataManLibrary
             for (int index = 0; index < QUESTION_AMOUNT; index++)
             {
                 
-                // inline variables to allow for reset in the forloop
+                // Inline variables to allow for reset in the forloop
                 string symbol = " ";
                 int userAnswer = 0;
                 int correctAnswer = 1000000;
@@ -61,7 +61,7 @@ namespace DataManLibrary
                     }
                     else if (symbol.Contains("/"))
                     {
-                        // stops the user from using zero. goto to send user to the second answer input.
+                        // Stops the user from using zero. goto to send user to the second answer input.
                         if (num2 != 0)
                         {
                             correctAnswer = num1 / num2;
@@ -95,7 +95,7 @@ namespace DataManLibrary
                     attempts++;
                 }
 
-                // displays after second incorrect answer
+                // Displays after second incorrect answer
                 if (userAnswer != correctAnswer)
                 {
                     Console.WriteLine($"{num1} {symbol} {num2} = {correctAnswer}");
