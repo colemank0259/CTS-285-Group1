@@ -22,7 +22,7 @@ namespace DataManLibrary
             try
             {
                 Console.WriteLine("Parent/Teacher please enter your 10 problems and solutions.");
-                Console.WriteLine("Example: first enter problem (2+2=)\nThen enter solution (4)");
+                Console.WriteLine("Enter the first number, operator, second number, and the solution.");
 
                 // Create a CSV file.
                 StreamWriter outputFile = File.CreateText("Parent_Teacher.csv");
