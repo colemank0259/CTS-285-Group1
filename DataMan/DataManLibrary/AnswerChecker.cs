@@ -27,7 +27,7 @@ namespace DataManLibrary
                 // inline variables to allow for reset in the forloop
                 string symbol = " ";
                 int userAnswer = 0;
-                int correctAnswer = 1;
+                int correctAnswer = 1000000;
                 int attempts = 0;
 
                 // Gets the user's first number for calculation by entering class method for validation.

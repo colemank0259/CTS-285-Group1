@@ -48,7 +48,7 @@ namespace DataManLibrary
             for (int i = 0; i < 2; i++)
             {
                 int attempts = 0;
-                double userAnswer = -1;
+                double userAnswer = -1000000;
 
                 // While user answer is incorrect and haven't answered twice.
                 while (attempts < 2 && userAnswer != answers[i])

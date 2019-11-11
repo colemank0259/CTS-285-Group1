@@ -2,7 +2,6 @@ C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\C
 C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.exe
 C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\ConsoleUI.pdb
 C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
-C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
 C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.exe
 C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.pdb
 D:\CTS-285-Group1\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
@@ -54,3 +53,6 @@ F:\Fall 19\CTS-285\Dataman\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyR
 F:\Fall 19\CTS-285\Dataman\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
 F:\Fall 19\CTS-285\Dataman\DataMan\ConsoleUI\obj\Debug\ConsoleUI.exe
 F:\Fall 19\CTS-285\Dataman\DataMan\ConsoleUI\obj\Debug\ConsoleUI.pdb
+C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\DataManLibrary.dll
+C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\bin\Debug\DataManLibrary.pdb
+C:\Users\ochsj6181\Documents\GitHub\CTS-285-Group1\DataMan\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
